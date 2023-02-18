@@ -19,4 +19,5 @@ require("lazy").setup({
   require "plugins/nvimtree", 
   require "plugins/mason", 
   require "plugins/cmp",
+  require 'plugins/treesitter',
 })
