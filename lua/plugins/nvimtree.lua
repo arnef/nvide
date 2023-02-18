@@ -5,10 +5,18 @@ return {
 	},
 	config = function()
     require("nvim-tree").setup({
+      filters = {
+        custom = { '.git' },
+        exclude = { '.gitignore' }
+      },
       view = {
         width = 25,
         hide_root_folder = true,
         side = "left",
+      },
+      git = {
+       enable = true,
+       ignore = true,
       }
     })
     vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = function(data)

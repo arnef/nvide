@@ -8,7 +8,6 @@ return {
     require("mason").setup()
     local mason_lsp = require("mason-lspconfig")
     mason_lsp.setup({
-      ensure_installed = { 'tsserver' },
       automatic_installation = true,
     })
     mason_lsp.setup_handlers {
