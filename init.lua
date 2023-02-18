@@ -20,4 +20,5 @@ require("lazy").setup({
   require "plugins/mason", 
   require "plugins/cmp",
   require 'plugins/treesitter',
+  require 'plugins/telescope',
 })
