@@ -14,6 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 require('core/options')
 require('core/keymaps')
 
+require ('utils/fold')
+require ('utils/highlight-yank')
+
 require("lazy").setup({
   require "plugins/tokyonight",
   require "plugins/nvimtree", 
@@ -22,6 +25,7 @@ require("lazy").setup({
   require 'plugins/treesitter',
   require 'plugins/telescope',
   require 'plugins/surround',
+  require 'plugins/commentary',
 
   { 'NvChad/nvim-colorizer.lua',
     config = function()
