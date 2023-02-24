@@ -3,4 +3,23 @@ return {
   dependencies = {
     'nvim-lua/plenary.nvim',
   },
+  cmd = "Telescope",
+  config = function ()
+    local telescope = require 'telescope'
+    local options = {
+      defaults = {
+      prompt_prefix = "   ",
+      layout_config = {
+        horizontal = {
+          prompt_position = "top",
+        },
+      },
+      file_ignore_patterns = { "node_modules" },
+      mappings = {
+        n = { ["q"] = require("telescope.actions").close },
+      },
+    },
+  }
+  telescope.setup(options)
+  end
 }

@@ -6,17 +6,22 @@ return {
 	config = function()
     require("nvim-tree").setup({
       filters = {
-        custom = { '.git' },
+        custom = { '.git$' },
         exclude = { '.gitignore' }
       },
       view = {
-        width = 25,
+        width = 30,
         hide_root_folder = true,
         side = "left",
+        adaptive_size = true,
       },
       git = {
        enable = true,
        ignore = true,
+      },
+      update_focused_file = {
+        enable = true,
+        update_root = true,
       }
     })
     vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = function(data)

@@ -18,10 +18,11 @@ require ('utils/fold')
 require ('utils/highlight-yank')
 
 require("lazy").setup({
-  require "plugins/tokyonight",
+  require "plugins/theme",
   require "plugins/nvimtree", 
   require "plugins/mason", 
   require "plugins/cmp",
+  -- require 'plugins/coc',
   require 'plugins/treesitter',
   require 'plugins/telescope',
   require 'plugins/surround',
@@ -32,6 +33,5 @@ require("lazy").setup({
       require 'colorizer'.setup()
     end
   },
-  { 
-    'styled-components/vim-styled-components', }
+  { 'styled-components/vim-styled-components' }
 })
