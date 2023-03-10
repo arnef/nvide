@@ -22,17 +22,17 @@ require("lazy").setup({
   require "plugins/nvimtree", 
   require "plugins/mason", 
   require "plugins/cmp",
-  -- require 'plugins/coc',
   require 'plugins/treesitter',
   require 'plugins/telescope',
   require 'plugins/surround',
   require 'plugins/commentary',
-  require 'plugins/barbar',
+  require 'plugins/bufferline',
 
   { 'NvChad/nvim-colorizer.lua',
     config = function()
       require 'colorizer'.setup()
     end
   },
-  { 'styled-components/vim-styled-components' }
+  { 'styled-components/vim-styled-components' },
+  require 'plugins/flutter',
 })
