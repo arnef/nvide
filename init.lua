@@ -20,9 +20,10 @@ require ('utils/highlight-yank')
 require("lazy").setup({
   require "plugins/theme",
   require "plugins/nvimtree", 
-  require "plugins/mason", 
-  require "plugins/cmp",
-  require 'plugins/treesitter',
+  -- require "plugins/mason", 
+  -- require "plugins/cmp",
+  -- require 'plugins/treesitter',
+  require 'plugins/coc',
   require 'plugins/telescope',
   require 'plugins/surround',
   require 'plugins/commentary',
