@@ -36,4 +36,6 @@ require("lazy").setup({
   },
   { 'styled-components/vim-styled-components' },
   require 'plugins/flutter',
+  require 'plugins/git',
+  require 'plugins/git-signs',
 })

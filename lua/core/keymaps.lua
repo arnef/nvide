@@ -20,3 +20,9 @@ local cocOpts = { silent = true, expr = true, noremap = true }
 map('i', '<TAB>', 'coc#pum#visible() ? coc#pum#next(1) : "<TAB>"', cocOpts)
 map('i', '<S-TAB>', 'coc#pum#visible() ? coc#pum#prev(1) : "<S-TAB>"', cocOpts)
 map('i', '<CR>', 'coc#pum#visible() ? coc#pum#confirm() : "<CR>"', cocOpts)
+
+map("n", "gd", "<Plug>(coc-definition)", {silent = true})
+map("n", "gy", "<Plug>(coc-type-definition)", {silent = true})
+map("n", "gi", "<Plug>(coc-implementation)", {silent = true})
+map("n", "gr", "<Plug>(coc-references)", {silent = true})
+

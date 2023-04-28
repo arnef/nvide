@@ -7,7 +7,7 @@ return {
     require("nvim-tree").setup({
       filters = {
         custom = { '.git$' },
-        exclude = { '.gitignore' }
+        exclude = { '.gitignore', '.env' }
       },
       view = {
         width = 30,
