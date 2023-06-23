@@ -17,7 +17,7 @@ return {
       },
       git = {
        enable = true,
-       ignore = true,
+       ignore = false,
       },
       update_focused_file = {
         enable = true,
